@@ -1,1 +1,1835 @@
-# portofolio
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Affan Hafizni Vasla, CTT — Tax Staff | Tax Compliance | Tax Reporting Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
+          },
+          colors: {
+            navy: {
+              50: '#f0f4f8',
+              100: '#d9e2ec',
+              800: '#102a43',
+              900: '#0a192f',
+              950: '#060f1d'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    h1, h2, h3, .font-display {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .glass-nav {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+    .hero-pattern {
+      background-image: radial-gradient(rgba(16, 185, 129, 0.12) 1px, transparent 1px), radial-gradient(rgba(59, 130, 246, 0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      background-position: 0 0, 14px 14px;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    .custom-scrollbar::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .custom-scrollbar::-webkit-scrollbar-thumb {
+      background: rgba(148, 163, 184, 0.4);
+      border-radius: 9999px;
+    }
+    @media print {
+      .no-print {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-200 selection:bg-emerald-500 selection:text-white">
+
+  <!-- Top Utility Banner for Portfolio Owner (Can be hidden via Recruiter Preview toggle) -->
+  <div id="ownerBanner" class="no-print bg-gradient-to-r from-slate-900 via-emerald-950 to-slate-900 text-white border-b border-emerald-500/30 px-4 py-2.5 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center px-2 py-0.5 rounded-full text-[11px] font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+          ✨ Versi CV Terbaru (Diperbarui)
+        </span>
+        <span class="text-slate-200">
+          Data telah disesuaikan dengan CV terbarumu (<strong>Tax Staff | Tax Compliance | Tax Reporting</strong> + Mini Project Pajak <code>bit.ly/4wsW79W</code>).
+        </span>
+      </div>
+      <div class="flex items-center gap-2">
+        <button id="btnOpenPhotoModalTop" type="button" class="px-2.5 py-1 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition flex items-center gap-1.5">
+          <span>📷</span> Atur Foto Profil
+        </button>
+        <button id="btnOpenGuideModalTop" type="button" class="px-2.5 py-1 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-medium transition flex items-center gap-1.5">
+          <span>🚀</span> Cara Pasang di CV &amp; LinkedIn
+        </button>
+        <button id="btnToggleRecruiterView" type="button" class="px-2.5 py-1 rounded-lg border border-slate-600 hover:border-slate-400 text-slate-200 font-medium transition">
+          👁️ Simulasi HRD
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Return from Recruiter View Button -->
+  <button id="btnExitRecruiterView" type="button" class="hidden fixed bottom-5 left-5 z-50 px-4 py-2.5 rounded-full bg-slate-900 text-white shadow-xl border border-emerald-500/50 text-xs font-semibold flex items-center gap-2 hover:bg-slate-800 transition">
+    <span>🛠️</span> Kembali ke Mode Edit Portofolio
+  </button>
+
+  <!-- Sticky Navigation -->
+  <header class="sticky top-0 z-40 glass-nav bg-white/85 dark:bg-slate-900/85 border-b border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+      <a href="#hero" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-emerald-600 to-teal-700 text-white font-display font-bold flex items-center justify-center shadow-sm group-hover:scale-105 transition">
+          AHV
+        </div>
+        <div>
+          <div class="font-display font-bold text-slate-900 dark:text-white text-sm sm:text-base flex items-center gap-1.5">
+            <span>Affan Hafizni Vasla</span>
+            <span class="px-1.5 py-0.5 text-[11px] font-bold rounded bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-300 border border-emerald-300/50">CTT®</span>
+          </div>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 hidden sm:block">Tax Staff • Tax Compliance • Tax Reporting • Accounting VBA</p>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center gap-1 lg:gap-2 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#proyek" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition">Proyek Pajak &amp; VBA</a>
+        <a href="#keahlian" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition">Skills &amp; Kompetensi</a>
+        <a href="#sertifikasi" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition">Sertifikasi (7)</a>
+        <a href="#pengalaman" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition">Pendidikan &amp; Organisasi</a>
+        <a href="#kontak" class="px-3 py-1.5 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-emerald-600 dark:hover:text-emerald-400 transition">Kontak</a>
+      </nav>
+
+      <!-- Right Controls -->
+      <div class="flex items-center gap-2">
+        <button id="btnThemeToggle" type="button" aria-label="Ganti Tema Gelap/Terang" class="p-2 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition">
+          <span id="themeIcon">🌙</span>
+        </button>
+        <a href="#kontak" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-semibold shadow-sm transition">
+          <span>Hubungi Saya</span>
+        </a>
+        <button id="btnMobileMenu" type="button" aria-label="Buka Menu" class="md:hidden p-2 rounded-xl border border-slate-200 dark:border-slate-700 text-slate-600 dark:text-slate-300">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenuPanel" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 px-4 py-3 space-y-1 text-sm">
+      <a href="#proyek" class="mobile-nav-link block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">📊 Mini Project Pajak &amp; Sistem VBA</a>
+      <a href="#keahlian" class="mobile-nav-link block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">⚖️ Tax Compliance &amp; Accounting Skills</a>
+      <a href="#sertifikasi" class="mobile-nav-link block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">🏅 Sertifikasi Resmi (7)</a>
+      <a href="#pengalaman" class="mobile-nav-link block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">🎓 Pendidikan &amp; Organisasi Pajak</a>
+      <a href="#kontak" class="mobile-nav-link block px-3 py-2 rounded-lg hover:bg-slate-100 dark:hover:bg-slate-800 font-medium">📬 Kontak &amp; Rekrutmen</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION (100% Aligned with Updated CV) -->
+    <section id="hero" class="relative overflow-hidden hero-pattern pt-10 pb-16 lg:pt-16 lg:pb-24 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+          
+          <!-- Left Column: Bio & Value Proposition -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex flex-wrap items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">
+              <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+              <span>Open for Opportunities: Tax Staff • Tax Compliance • Tax Reporting</span>
+              <span class="text-slate-400">•</span>
+              <span>Kota Bekasi / Jabodetabek</span>
+            </div>
+
+            <div class="space-y-3">
+              <h1 class="text-3xl sm:text-4xl lg:text-5xl font-display font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+                Affan Hafizni Vasla, <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500 dark:from-emerald-400 dark:to-teal-300">CTT</span>
+              </h1>
+              <p class="text-base sm:text-lg font-bold text-slate-700 dark:text-slate-200 flex flex-wrap items-center gap-2">
+                <span>Tax Staff</span>
+                <span class="text-emerald-500">|</span>
+                <span>Tax Compliance</span>
+                <span class="text-emerald-500">|</span>
+                <span>Tax Reporting</span>
+                <span class="text-emerald-500">|</span>
+                <span class="text-emerald-600 dark:text-emerald-400">Accounting &amp; VBA Automation</span>
+              </p>
+            </div>
+
+            <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 leading-relaxed">
+              Mahasiswa <strong>S1 Akuntansi Universitas Bhayangkara Jakarta Raya</strong> dengan kompetensi di bidang <strong>Tax Administration, Tax Compliance, dan Tax Reporting</strong>. Menguasai penyusunan dan pelaporan <strong>SPT Masa PPh Pasal 21 dan pembuatan e-Bupot</strong>, <strong>SPT Masa PPN dan pembuatan e-Faktur</strong>, <strong>SPT PPh Unifikasi dan Bukti Potong PPh Unifikasi (BPPU)</strong>, penyusunan <strong>SPT Tahunan PPh Badan dan Rekonsiliasi Fiskal</strong>, serta administrasi dokumen perpajakan menggunakan <strong>Coretax</strong>. Mampu mengoperasikan <strong>Microsoft Excel (Pivot Table, XLOOKUP, VLOOKUP, IF, SUMIFS &amp; Macro VBA), Accurate Online, dan Zahir Accounting</strong> untuk pengolahan data, pencatatan transaksi, serta penyusunan laporan keuangan. Kompetensi didukung oleh sertifikasi <strong>Certified Tax Technician (CTT)</strong> dan <strong>Brevet A &amp; B</strong>.
+            </p>
+
+            <!-- Key Metric Highlights -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-1">
+              <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                <div class="text-xl sm:text-2xl font-display font-extrabold text-emerald-600 dark:text-emerald-400">CTT®</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-0.5">Certified Tax Technician ATPI</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                <div class="text-xl sm:text-2xl font-display font-extrabold text-slate-900 dark:text-white">Coretax</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-0.5">e-Faktur, e-Bupot &amp; BPPU</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                <div class="text-xl sm:text-2xl font-display font-extrabold text-slate-900 dark:text-white">Excel VBA</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-0.5">Accurate &amp; Zahir ERP</div>
+              </div>
+              <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/80 dark:border-slate-800 shadow-sm">
+                <div class="text-xl sm:text-2xl font-display font-extrabold text-slate-900 dark:text-white">RENJANI</div>
+                <div class="text-xs font-medium text-slate-500 dark:text-slate-400 mt-0.5">Relawan Pajak DJP &amp; R&amp;D</div>
+              </div>
+            </div>
+
+            <!-- Action CTAs -->
+            <div class="flex flex-wrap items-center gap-3 pt-2">
+              <a href="#proyek" class="px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white font-semibold text-sm shadow-md transition flex items-center gap-2">
+                <span>📂 Lihat Mini Project Pajak &amp; Sistem VBA</span>
+              </a>
+              <a href="https://bit.ly/4wsW79W" target="_blank" rel="noopener noreferrer" class="px-4 py-3 rounded-xl bg-white dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-800 dark:text-slate-200 border border-slate-300 dark:border-slate-700 font-semibold text-sm transition flex items-center gap-2">
+                <span>🔗 Bukti Mini Project Pajak (bit.ly/4wsW79W) ↗</span>
+              </a>
+              <button id="btnCopyPortfolioPitch" type="button" class="px-4 py-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 hover:bg-emerald-100 dark:hover:bg-emerald-900/60 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800/60 font-semibold text-sm transition flex items-center gap-1.5">
+                <span>📋 Salin Profil CV</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Professional Portrait Card & Interactive Photo Slot -->
+          <div class="lg:col-span-5 flex flex-col items-center">
+            <div class="w-full max-w-md bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 shadow-xl p-6 relative overflow-hidden">
+              <!-- Decorative Top Accent -->
+              <div class="absolute top-0 inset-x-0 h-2 bg-gradient-to-r from-emerald-500 via-teal-500 to-blue-600"></div>
+
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Tax &amp; Accounting Professional</span>
+                  <h2 class="text-sm font-bold text-slate-800 dark:text-slate-100">Affan Hafizni Vasla, CTT</h2>
+                </div>
+                <span class="px-2.5 py-1 rounded-full text-[11px] font-semibold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">
+                  Reg: CTT 04.05.000.025.849
+                </span>
+              </div>
+
+              <!-- Photo Container -->
+              <div id="photoFrameContainer" class="relative mx-auto w-60 h-64 sm:w-64 sm:h-72 rounded-2xl overflow-hidden bg-gradient-to-b from-slate-800 via-slate-900 to-slate-950 border-2 border-emerald-500/40 shadow-inner flex flex-col items-center justify-center group">
+                <!-- Default Professional Silhouette / Avatar Graphic when no photo uploaded -->
+                <div id="defaultAvatarPlaceholder" class="flex flex-col items-center justify-center text-center p-5 select-none">
+                  <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-emerald-500/20 to-teal-400/30 border border-emerald-400/40 flex items-center justify-center mb-3 shadow-lg">
+                    <svg class="w-14 h-14 text-emerald-300" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
+                    </svg>
+                  </div>
+                  <span class="px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 text-[11px] font-semibold border border-emerald-400/30 mb-1">
+                    Slot Foto Profesional
+                  </span>
+                  <p class="text-xs text-slate-300 max-w-[200px] leading-snug">
+                    Klik tombol di bawah untuk mengunggah foto jas/formal terbaikmu
+                  </p>
+                </div>
+
+                <!-- Uploaded Photo Element -->
+                <img id="userProfileImage" src="" alt="Foto Profesional Affan Hafizni Vasla" class="hidden w-full h-full object-cover transition-transform duration-150" />
+
+                <!-- Hover Overlay for Photo Upload (Hidden in Recruiter View) -->
+                <button id="btnOverlayPhotoUpload" type="button" class="owner-only absolute inset-0 bg-slate-950/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white text-xs font-semibold gap-2 p-4">
+                  <span class="px-3 py-1.5 rounded-xl bg-emerald-600 shadow">📷 Ganti / Sesuaikan Foto</span>
+                </button>
+              </div>
+
+              <!-- Photo Studio Quick Trigger (Owner Mode) -->
+              <div class="owner-only mt-3 flex items-center justify-center gap-2">
+                <button id="btnOpenPhotoModalCard" type="button" class="w-full py-2 px-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 hover:bg-emerald-100 dark:hover:bg-emerald-900/70 text-emerald-700 dark:text-emerald-300 border border-emerald-300/60 dark:border-emerald-700/60 text-xs font-semibold transition flex items-center justify-center gap-1.5">
+                  <span>📷</span> Upload &amp; Atur Posisi Foto Profesional
+                </button>
+              </div>
+
+              <!-- Quick Credential Pills inside Profile Card -->
+              <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 space-y-2 text-xs">
+                <div class="flex items-center justify-between text-slate-600 dark:text-slate-300">
+                  <span class="text-slate-400">Fokus Karier:</span>
+                  <span class="font-semibold text-right">Tax Staff | Tax Compliance | Tax Reporting</span>
+                </div>
+                <div class="flex items-center justify-between text-slate-600 dark:text-slate-300">
+                  <span class="text-slate-400">Pendidikan:</span>
+                  <span class="font-semibold text-right">S1 Akuntansi — Ubhara Jaya (IPK 3.11)</span>
+                </div>
+                <div class="flex items-center justify-between text-slate-600 dark:text-slate-300">
+                  <span class="text-slate-400">Keahlian Utama:</span>
+                  <span class="font-semibold text-emerald-600 dark:text-emerald-400 text-right">e-Bupot, e-Faktur, BPPU, Coretax, VBA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 1: FEATURED PROJECTS (TAX COMPLIANCE MINI PROJECT + MACRO VBA ACCOUNTING SYSTEM) -->
+    <section id="proyek" class="py-16 lg:py-20 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Featured Portfolio &amp; Practical Case Studies</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white mt-1">
+              Proyek Siklus Akuntansi Macro VBA &amp; Studi Kasus Perpajakan
+            </h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1 max-w-3xl">
+              Menampilkan kombinasi karya otomasi <strong>Sistem Siklus Akuntansi berbasis Excel Macro VBA</strong> serta portofolio praktik nyata <strong>Tax Compliance &amp; Reporting (Coretax, e-Faktur, e-Bupot, BPPU, dan Rekonsiliasi Fiskal)</strong>.
+            </p>
+          </div>
+          <div class="flex items-center gap-2">
+            <button id="btnOpenVbaCustomizer" type="button" class="owner-only px-3.5 py-2 rounded-xl bg-amber-500/10 hover:bg-amber-500/20 text-amber-700 dark:text-amber-300 border border-amber-500/30 text-xs font-semibold transition flex items-center gap-1.5">
+              <span>⚙️</span> Kustomisasi Detail Proyek VBA (Tahap 2)
+            </button>
+          </div>
+        </div>
+
+        <!-- Project 1: Flagship Macro VBA Accounting Cycle System -->
+        <div class="rounded-3xl bg-gradient-to-br from-slate-900 via-slate-900 to-emerald-950 text-white p-6 sm:p-8 lg:p-10 shadow-xl border border-emerald-500/30 mb-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Project Overview Column -->
+            <div class="lg:col-span-5 space-y-5">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500 text-slate-950">
+                  ★ Proyek Inovasi Akuntansi (Flagship)
+                </span>
+                <span id="vbaProjectStatusBadge" class="px-2.5 py-1 rounded-full text-xs font-medium bg-white/10 text-emerald-300 border border-emerald-400/30">
+                  Excel Macro VBA (.xlsm)
+                </span>
+              </div>
+
+              <div>
+                <h3 id="vbaProjectTitle" class="text-2xl sm:text-3xl font-display font-bold text-white leading-snug">
+                  Sistem Siklus Akuntansi Terintegrasi Berbasis Excel Macro VBA
+                </h3>
+                <p id="vbaProjectDesc" class="text-sm text-slate-300 mt-2.5 leading-relaxed">
+                  Aplikasi kerja berbasis Microsoft Excel Macro VBA yang dirancang untuk mengotomasi siklus akuntansi secara end-to-end—mulai dari pengaturan Chart of Accounts (COA), input transaksi via UserForm tervalidasi, posting otomatis ke Buku Besar, hingga penyusunan Neraca Lajur dan Laporan Keuangan yang siap menjadi dasar Rekonsiliasi Fiskal.
+                </p>
+              </div>
+
+              <!-- Key Highlights of the System -->
+              <div class="space-y-2.5 text-xs sm:text-sm text-slate-200">
+                <div class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 font-bold mt-0.5">✔</span>
+                  <span><strong>Validasi Double-Entry Otomatis:</strong> Mencegah selisih Debit &amp; Kredit (Out of Balance) sebelum transaksi disimpan ke database jurnal.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 font-bold mt-0.5">✔</span>
+                  <span><strong>Otomasi Posting 1-Klik:</strong> Memangkas waktu rekapitulasi Buku Besar, Neraca Saldo, dan Kertas Kerja (Worksheet) secara instan.</span>
+                </div>
+                <div class="flex items-start gap-2.5">
+                  <span class="text-emerald-400 font-bold mt-0.5">✔</span>
+                  <span><strong>Siap Mendukung Pelaporan Pajak:</strong> Menghasilkan Laporan Laba Rugi dan Neraca komersial yang rapi untuk kertas kerja Rekonsiliasi Fiskal PPh Badan.</span>
+                </div>
+              </div>
+
+              <!-- Tech Stack Pills -->
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs font-medium text-slate-200">Excel Macro VBA</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs font-medium text-slate-200">UserForm &amp; Data Validation</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs font-medium text-slate-200">Automated General Ledger</span>
+                <span class="px-2.5 py-1 rounded-lg bg-white/10 text-xs font-medium text-slate-200">Financial Statements</span>
+              </div>
+            </div>
+
+            <!-- Interactive Accounting Cycle Flow Explorer Column -->
+            <div class="lg:col-span-7 bg-slate-950/70 rounded-2xl p-5 sm:p-6 border border-slate-800">
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <div>
+                  <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Simulasi Interaktif Arsitektur Sistem</span>
+                  <h4 class="text-sm sm:text-base font-bold text-white">Klik Tahapan Siklus Akuntansi untuk Melihat Cara Kerja Sistem VBA:</h4>
+                </div>
+                <span class="text-[11px] px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20">6 Modul Siklus</span>
+              </div>
+
+              <!-- Step Buttons Grid -->
+              <div id="vbaCycleStepsGrid" class="grid grid-cols-2 sm:grid-cols-3 gap-2.5 mb-5">
+                <!-- Populated by JS -->
+              </div>
+
+              <!-- Active Step Detail View -->
+              <div id="vbaActiveStepCard" class="rounded-xl bg-slate-900 border border-emerald-500/30 p-4 sm:p-5 transition-all">
+                <!-- Populated by JS -->
+              </div>
+
+              <!-- Interactive Mini Journal Entry Simulator inside the VBA Showcase -->
+              <div class="mt-4 pt-4 border-t border-slate-800/90 flex flex-wrap items-center justify-between gap-3">
+                <div class="text-xs text-slate-300">
+                  💡 <strong>Siap untuk Tahap 2:</strong> Kamu tinggal memperkenalkan detail sistem VBA buatanmu di chat agar kita sesuaikan modul ini 100%.
+                </div>
+                <button id="btnOpenVbaSimulatorModal" type="button" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition shadow">
+                  🖩 Coba Demo Validasi Jurnal VBA
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Project 2 (NEW FROM UPDATED CV: MINI PROJECT TAX COMPLIANCE 07/2026) & Project 3 Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- NEW CV Mini Project: Tax Compliance (07/2026 - https://bit.ly/4wsW79W) -->
+          <div class="rounded-2xl bg-emerald-50/70 dark:bg-emerald-950/20 border-2 border-emerald-500/40 p-6 flex flex-col justify-between shadow-sm hover:border-emerald-500 transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full text-xs font-bold bg-emerald-600 text-white">
+                  ★ MINI PROJECT PERPAJAKAN (CV Terbaru)
+                </span>
+                <span class="text-xs font-bold text-emerald-700 dark:text-emerald-300">Juli 2026 (07/2026)</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-display font-bold text-slate-900 dark:text-white">
+                Tax Compliance &amp; Reporting Case Study — Coretax, e-Faktur, e-Bupot &amp; BPPU
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Praktik penyusunan dan pelaporan perpajakan komprehensif melalui studi kasus nyata sesuai regulasi terbaru Direktorat Jenderal Pajak:
+              </p>
+              <ul class="mt-3 space-y-1.5 text-xs sm:text-sm text-slate-700 dark:text-slate-200 list-disc list-inside font-medium">
+                <li>Penyusunan <strong>SPT Masa PPN</strong> dan pembuatan <strong>e-Faktur</strong>.</li>
+                <li>Penyusunan <strong>SPT Masa PPh Pasal 21</strong> dan pembuatan <strong>e-Bupot</strong>.</li>
+                <li>Penyusunan <strong>SPT Masa PPh Unifikasi</strong> dan <strong>Bukti Potong PPh Unifikasi (BPPU)</strong>.</li>
+                <li>Penyusunan <strong>SPT Tahunan PPh Badan</strong> dan <strong>Rekonsiliasi Fiskal</strong> menggunakan <strong>Coretax</strong>.</li>
+              </ul>
+              <div class="flex flex-wrap gap-1.5 mt-4">
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-emerald-300 dark:border-emerald-800 text-[11px] font-semibold text-emerald-800 dark:text-emerald-300">e-Faktur &amp; SPT PPN</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-emerald-300 dark:border-emerald-800 text-[11px] font-semibold text-emerald-800 dark:text-emerald-300">e-Bupot PPh 21</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-emerald-300 dark:border-emerald-800 text-[11px] font-semibold text-emerald-800 dark:text-emerald-300">BPPU Unifikasi</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-emerald-300 dark:border-emerald-800 text-[11px] font-semibold text-emerald-800 dark:text-emerald-300">Coretax &amp; Rekonsiliasi Fiskal</span>
+              </div>
+            </div>
+            <div class="mt-5 pt-4 border-t border-emerald-200/80 dark:border-emerald-800/60 flex flex-wrap items-center justify-between gap-3">
+              <span class="text-xs text-emerald-800 dark:text-emerald-300 font-semibold">Link Portofolio Pajak: bit.ly/4wsW79W</span>
+              <a href="https://bit.ly/4wsW79W" target="_blank" rel="noopener noreferrer" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition inline-flex items-center gap-1.5 shadow-sm">
+                <span>Buka Dokumen Mini Project Pajak</span>
+                <span>↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Project 3: KarirNex E-Commerce Sales Dashboard + Multi-ERP -->
+          <div class="rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-800 p-6 flex flex-col justify-between hover:border-emerald-500/50 transition">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">
+                  Excel Bootcamp &amp; Cloud ERP Portfolio
+                </span>
+                <span class="text-xs text-slate-400">Februari 2026</span>
+              </div>
+              <h3 class="text-lg sm:text-xl font-display font-bold text-slate-900 dark:text-white">
+                E-Commerce Sales Dashboard (Excel) &amp; Database Setup (Accurate &amp; Zahir)
+              </h3>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+                Penyusunan laporan penjualan dan dashboard interaktif untuk <em>KarirNex Grocery Store</em> menggunakan Microsoft Excel (<strong>Pivot Table, Pivot Chart, XLOOKUP, VLOOKUP, IF, SUMIFS, Data Validation</strong>), serta praktik setup database perusahaan dari Chart of Accounts (COA), transaksi pembelian/penjualan, persediaan, aset tetap, hingga laporan keuangan otomatis di <strong>Accurate Online</strong> dan <strong>Zahir Accounting</strong>.
+              </p>
+              <div class="flex flex-wrap gap-1.5 mt-4">
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-[11px] font-medium">Pivot Table &amp; XLOOKUP/SUMIFS</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-[11px] font-medium">Accurate Online (8 Modul)</span>
+                <span class="px-2 py-0.5 rounded bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 text-[11px] font-medium">Zahir Accounting (7 Modul)</span>
+              </div>
+            </div>
+            <div class="mt-5 pt-4 border-t border-slate-200/80 dark:border-slate-700/80 flex flex-wrap items-center justify-between gap-3">
+              <a href="https://www.linkedin.com/posts/affan-h-v-4a3848237_pelatihan-excel-by-karirnex-activity-7432097092699041792-4E8_" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-lg bg-slate-900 dark:bg-slate-700 hover:bg-emerald-600 text-white text-xs font-semibold transition inline-flex items-center gap-1">
+                <span>Postingan Proyek Excel (LinkedIn)</span>
+                <span>↗</span>
+              </a>
+              <button type="button" data-cert-open="accurate" class="btn-open-cert text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:underline">
+                Lihat Modul Accurate &amp; Zahir →
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: TAX & ACCOUNTING COMPETENCY MATRIX + BREVET A&B GRADES -->
+    <section id="keahlian" class="py-16 lg:py-20 bg-slate-50 dark:bg-slate-950 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Tax Compliance &amp; Accounting Skills (Sesuai CV Terbaru)</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white mt-1">
+              Keahlian Perpajakan, Software Akuntansi &amp; Microsoft Excel
+            </h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
+              Terbagi ke dalam kompetensi inti <strong>Tax Compliance &amp; Reporting</strong> serta <strong>Accounting &amp; Software</strong>.
+            </p>
+          </div>
+
+          <!-- Skill Filter Buttons -->
+          <div class="flex flex-wrap gap-1.5" id="skillFilterBar">
+            <button type="button" data-skill-filter="all" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-600 text-white shadow-sm transition">
+              Semua Keahlian (20)
+            </button>
+            <button type="button" data-skill-filter="tax" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition">
+              Tax Compliance &amp; Coretax (11)
+            </button>
+            <button type="button" data-skill-filter="accounting" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition">
+              Accounting &amp; ERP Software (3)
+            </button>
+            <button type="button" data-skill-filter="data" class="skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition">
+              Microsoft Excel &amp; VBA (6)
+            </button>
+          </div>
+        </div>
+
+        <!-- Filterable Skills Grid -->
+        <div id="skillsGrid" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-12">
+          <!-- Populated by JS -->
+        </div>
+
+        <!-- Two-Column Deep Proof: Brevet A&B Grades + ATPI 16 Competency Units -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          <!-- Left: Brevet A & B Official Grade Scorecard -->
+          <div class="lg:col-span-5 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between gap-2 mb-4">
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Transkrip Nilai Pelatihan</span>
+                  <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white">Daftar Nilai Brevet A &amp; B</h3>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 text-xs font-bold border border-emerald-200 dark:border-emerald-800">
+                  2.280 Menit (100% Hadir)
+                </span>
+              </div>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mb-5">
+                Diterbitkan oleh <strong>Routind Academy &amp; Unggul Tax Academy</strong> (No: 01379/RTND/05/2026 • Angkatan 17).
+              </p>
+
+              <!-- Grades List -->
+              <div class="space-y-3">
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>PPN dan PPnBM</span>
+                    <span class="text-emerald-600 dark:text-emerald-400 font-bold">A+ (Amat Sangat Baik • 91–100)</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-emerald-500 rounded-full" style="width: 96%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>Akuntansi Perpajakan</span>
+                    <span class="text-emerald-600 dark:text-emerald-400 font-bold">A+ (Amat Sangat Baik • 91–100)</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-emerald-500 rounded-full" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>PPh Orang Pribadi</span>
+                    <span class="text-teal-600 dark:text-teal-400 font-bold">A (Sangat Baik • 81–90)</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-teal-500 rounded-full" style="width: 88%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>PPh Badan</span>
+                    <span class="text-teal-600 dark:text-teal-400 font-bold">A (Sangat Baik • 81–90)</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-teal-500 rounded-full" style="width: 88%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>PPh Pemotongan dan Pemungutan</span>
+                    <span class="text-teal-600 dark:text-teal-400 font-bold">A (Sangat Baik • 81–90)</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-teal-500 rounded-full" style="width: 87%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>PBB, Bea Meterai dan BPHTB</span>
+                    <span class="text-teal-600 dark:text-teal-400 font-bold">A (Sangat Baik • 81–90)</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-teal-500 rounded-full" style="width: 86%"></div>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="flex justify-between text-xs font-semibold mb-1">
+                    <span>Ketentuan Umum Perpajakan (KUP)</span>
+                    <span class="text-blue-600 dark:text-blue-400 font-bold">B (Baik • 71–80)</span>
+                  </div>
+                  <div class="w-full h-2 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden">
+                    <div class="h-full bg-blue-500 rounded-full" style="width: 78%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-5 pt-4 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-500 flex items-center justify-between">
+              <span>No. Peserta: 26170101166</span>
+              <span>Tanggal Lulus: 28 Mei 2026</span>
+            </div>
+          </div>
+
+          <!-- Right: ATPI 16 Official Unit Competencies Table -->
+          <div class="lg:col-span-7 bg-white dark:bg-slate-900 rounded-3xl border border-slate-200 dark:border-slate-800 p-6 shadow-sm flex flex-col justify-between">
+            <div>
+              <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+                <div>
+                  <span class="text-[11px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Sertifikasi Kompetensi Profesi (ATPI)</span>
+                  <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white">
+                    16 Unit Kompetensi Certified Tax Technician (CTT)
+                  </h3>
+                </div>
+                <span class="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 text-xs font-semibold">
+                  No: 692000.347.5.025.849.2026
+                </span>
+              </div>
+
+              <div class="overflow-x-auto max-h-80 custom-scrollbar border border-slate-200 dark:border-slate-800 rounded-2xl">
+                <table class="w-full text-left border-collapse text-xs">
+                  <thead class="bg-slate-100 dark:bg-slate-800/90 text-slate-700 dark:text-slate-300 sticky top-0">
+                    <tr>
+                      <th class="py-2.5 px-3 font-bold">Kode Unit</th>
+                      <th class="py-2.5 px-3 font-bold">Judul Unit Kompetensi (Skema Madya Brevet A&amp;B)</th>
+                      <th class="py-2.5 px-3 font-bold text-right">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody id="atpiUnitsTableBody" class="divide-y divide-slate-100 dark:divide-slate-800">
+                    <!-- Populated by JS -->
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 flex flex-wrap items-center justify-between gap-2 text-xs text-slate-500">
+              <span>Diterbitkan di Jakarta, 7 Mei 2026 (Berlaku 5 Tahun s/d Mei 2031)</span>
+              <span class="font-semibold text-emerald-600 dark:text-emerald-400">Asosiasi Teknisi Perpajakan Indonesia (ATPI)</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: VERIFIED CERTIFICATIONS & CREDENTIALS VAULT -->
+    <section id="sertifikasi" class="py-16 lg:py-20 bg-white dark:bg-slate-900 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Tax Training &amp; Accounting Certifications</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white mt-1">
+              Sertifikasi &amp; Output Kompetensi Terverifikasi
+            </h2>
+            <p class="text-sm text-slate-600 dark:text-slate-400 mt-1">
+              Dilengkapi dengan ringkasan <strong>Output Kompetensi</strong> sesuai CV terbaru, nomor sertifikat, dan link verifikasi resmi.
+            </p>
+          </div>
+
+          <!-- Certificate Filter Buttons -->
+          <div class="flex flex-wrap gap-1.5" id="certFilterBar">
+            <button type="button" data-cert-filter="all" class="cert-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 dark:bg-emerald-600 text-white transition">
+              Semua (7)
+            </button>
+            <button type="button" data-cert-filter="tax" class="cert-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 transition">
+              Perpajakan (4)
+            </button>
+            <button type="button" data-cert-filter="accounting" class="cert-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 transition">
+              Software Akuntansi (2)
+            </button>
+            <button type="button" data-cert-filter="excel" class="cert-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 transition">
+              Excel &amp; VBA (1)
+            </button>
+          </div>
+        </div>
+
+        <!-- Certificates Grid -->
+        <div id="certificatesGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- Populated by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: EDUCATION, ORGANIZATIONAL LEADERSHIP & PRACTICAL CASE STUDIES -->
+    <section id="pengalaman" class="py-16 lg:py-20 bg-slate-50 dark:bg-slate-950 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Academic, Organizational &amp; Case Study Track Record</span>
+            <h2 class="text-2xl sm:text-3xl font-display font-extrabold text-slate-900 dark:text-white mt-1">
+              Organisasi Perpajakan, Pendidikan &amp; Studi Kasus
+            </h2>
+          </div>
+
+          <!-- Section Tabs (Preserving data-exp-tab keys while matching the new CV structure!) -->
+          <div class="inline-flex p-1 rounded-2xl bg-slate-200/80 dark:bg-slate-900 border border-slate-300/60 dark:border-slate-800">
+            <button type="button" data-exp-tab="org" class="exp-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-sm transition">
+              🏛️ Organisasi &amp; Relawan Pajak (3)
+            </button>
+            <button type="button" data-exp-tab="edu" class="exp-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition">
+              🎓 Pendidikan &amp; Transkrip (2)
+            </button>
+            <button type="button" data-exp-tab="work" class="exp-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition">
+              📂 Detail Studi Kasus &amp; Praktik (3)
+            </button>
+          </div>
+        </div>
+
+        <!-- Tab Content 1 (Default Active): Organizational Experience (2025 - Sekarang) -->
+        <div id="tabPanelOrg" class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
+                2025 – Sekarang
+              </span>
+              <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white mt-3">
+                Relawan Pajak (RENJANI)
+              </h3>
+              <p class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-0.5">Direktorat Jenderal Pajak (DJP)</p>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                Berperan aktif sebagai Relawan Pajak untuk Negeri (RENJANI) di bawah naungan Direktorat Jenderal Pajak dalam asistensi kepatuhan wajib pajak, pelaporan SPT, serta sosialisasi implementasi Coretax.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400">
+              Direktorat Jenderal Pajak RI
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">
+                2025 – Sekarang
+              </span>
+              <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white mt-3">
+                Koordinator Research and Development (R&amp;D)
+              </h3>
+              <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">UKM Tax Center Universitas Bhayangkara Jakarta Raya</p>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                Mengelola divisi riset dan pengembangan kajian perpajakan mahasiswa serta bertugas sebagai <strong>Koordinator Acara</strong> dalam kegiatan <em>Coretax Action Camp (From Training to Real Action)</em> periode 2025/2026.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400">
+              UKM Tax Center Ubhara Jaya
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col justify-between">
+            <div>
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300">
+                2025 – Sekarang
+              </span>
+              <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white mt-3">
+                Ketua Angkatan 24
+              </h3>
+              <p class="text-xs font-semibold text-amber-600 dark:text-amber-400 mt-0.5">Fakultas Ekonomi dan Bisnis — Universitas Bhayangkara Jakarta Raya</p>
+              <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 mt-3 leading-relaxed">
+                Mengoordinasikan komunikasi akademik, kolaborasi kegiatan mahasiswa, dan kepemimpinan angkatan 2024 di lingkungan Fakultas Ekonomi dan Bisnis.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-400">
+              FEB Universitas Bhayangkara Jakarta Raya
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content 2: Education & Academic Transcript -->
+        <div id="tabPanelEdu" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">
+                2024 – Sekarang
+              </span>
+              <span class="text-sm font-extrabold text-emerald-600 dark:text-emerald-400">IPK: 3.11 / 4.00</span>
+            </div>
+            <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white">
+              Universitas Bhayangkara Jakarta Raya
+            </h3>
+            <p class="text-sm font-semibold text-slate-600 dark:text-slate-300">S1 Akuntansi • NPM: 202410315021</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
+              Fokus pada Akuntansi Keuangan, Akuntansi Biaya, Perpajakan, serta Sistem Informasi &amp; Pengolahan Data Bisnis (61 SKS ditempuh per Maret 2026).
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800">
+              <div class="text-xs font-bold text-slate-700 dark:text-slate-300 mb-2">Sorotan Mata Kuliah (Transkrip Resmi):</div>
+              <div class="flex flex-wrap gap-1.5 text-[11px]">
+                <span class="px-2 py-1 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-medium">Matematika Ekonomi &amp; Bisnis (A)</span>
+                <span class="px-2 py-1 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-medium">Pengantar Teknologi Informasi (A)</span>
+                <span class="px-2 py-1 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-medium">Statistik Bisnis 1 (A)</span>
+                <span class="px-2 py-1 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-medium">Pengantar Manajemen (A)</span>
+                <span class="px-2 py-1 rounded bg-emerald-50 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-300 font-medium">Kebanksentralan (A-)</span>
+                <span class="px-2 py-1 rounded bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">Pengantar Akuntansi 1 &amp; 2 (B+)</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">
+                2019 – 2022
+              </span>
+              <span class="text-sm font-extrabold text-blue-600 dark:text-blue-400">Nilai Rata-Rata: 82 (Transkrip: 82.57)</span>
+            </div>
+            <h3 class="text-xl font-display font-bold text-slate-900 dark:text-white">
+              SMK Negeri 15 Kota Bekasi
+            </h3>
+            <p class="text-sm font-semibold text-slate-600 dark:text-slate-300">Teknik Komputer dan Jaringan (TKJ)</p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">
+              Latar belakang pendidikan vokasi teknologi informasi dan pemrograman dasar yang menjadi pondasi kuat dalam membangun otomasi siklus akuntansi berbasis <strong>Excel Macro VBA</strong> serta adaptasi cepat pada aplikasi perpajakan <strong>Coretax</strong> dan Cloud ERP.
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-100 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-300 space-y-1">
+              <div>• <strong>Kompetensi Keahlian:</strong> Pemrograman Dasar, Sistem Komputer, Administrasi Sistem Jaringan</div>
+              <div>• <strong>Praktik Kerja Industri (Prakerin):</strong> CV Dot Network (Nilai: 81)</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab Content 3: Practical Tax & Accounting Case Studies (Matches New CV Focus) -->
+        <div id="tabPanelWork" class="hidden space-y-5">
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <div class="flex flex-wrap items-center gap-2">
+                  <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white">Mini Project: Tax Compliance &amp; Reporting (Studi Kasus Terpadu)</h3>
+                  <a href="https://bit.ly/4wsW79W" target="_blank" rel="noopener noreferrer" class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300 hover:underline">
+                    https://bit.ly/4wsW79W ↗
+                  </a>
+                </div>
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-300 mt-0.5">Praktik Penyusunan &amp; Pelaporan SPT Masa dan Tahunan (Coretax)</p>
+              </div>
+              <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300">
+                07/2026
+              </span>
+            </div>
+            <ul class="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 list-disc list-inside">
+              <li>Praktik penyusunan dan pelaporan <strong>SPT Masa PPN</strong> serta pembuatan faktur pajak melalui <strong>e-Faktur</strong>.</li>
+              <li>Praktik perhitungan, penyusunan <strong>SPT Masa PPh Pasal 21</strong>, dan pembuatan bukti potong melalui <strong>e-Bupot</strong>.</li>
+              <li>Praktik penyusunan <strong>SPT Masa PPh Unifikasi</strong> dan penerbitan <strong>Bukti Potong PPh Unifikasi (BPPU)</strong>.</li>
+              <li>Penyusunan <strong>SPT Tahunan PPh Badan</strong> beserta kertas kerja <strong>Rekonsiliasi Fiskal</strong> menggunakan sistem <strong>Coretax</strong>.</li>
+            </ul>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white">Pengembangan Sistem Siklus Akuntansi Berbasis Excel Macro VBA</h3>
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-300 mt-0.5">Inovasi Otomasi Pencatatan Transaksi hingga Laporan Keuangan</p>
+              </div>
+              <span class="px-3 py-1 rounded-lg bg-emerald-100 dark:bg-emerald-900/40 text-xs font-semibold text-emerald-700 dark:text-emerald-300">
+                Proyek Mandiri (2026)
+              </span>
+            </div>
+            <ul class="mt-4 space-y-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 list-disc list-inside">
+              <li>Merancang alur kerja otomatis di Microsoft Excel menggunakan <strong>Macro VBA</strong> untuk mencatat jurnal umum, memvalidasi keseimbangan Debit/Kredit, dan mem-posting ke Buku Besar.</li>
+              <li>Mengotomasi penyusunan Neraca Saldo, Kertas Kerja (Worksheet), Laporan Laba Rugi, dan Laporan Posisi Keuangan (Neraca).</li>
+            </ul>
+          </div>
+
+          <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <h3 class="text-lg font-display font-bold text-slate-900 dark:text-white">Pengalaman Operasional &amp; Koordinasi Tim (Riwayat Pendukung)</h3>
+                <p class="text-sm font-semibold text-slate-700 dark:text-slate-300 mt-0.5">PT Proteindotama Cipta Pangan (Japfa Group) — Warehouse Operator / Ketua Regu</p>
+              </div>
+              <span class="px-3 py-1 rounded-lg bg-slate-100 dark:bg-slate-800 text-xs font-semibold text-slate-600 dark:text-slate-300">
+                Surat Referensi: SKK/435/PCP/VII/2023/YH
+              </span>
+            </div>
+            <p class="mt-3 text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed">
+              Memiliki rekam jejak kedisiplinan kerja dan kepemimpinan lapangan dalam mengoordinasikan 11 anggota tim, melaksanakan <em>stock opname</em> rutin (harian, mingguan, bulanan), serta rekonsiliasi data fisik persediaan dengan pencatatan administrasi operasional.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT & RECRUITER QUICK-CONNECT -->
+    <section id="kontak" class="py-16 lg:py-20 bg-white dark:bg-slate-900">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-slate-900 text-white p-6 sm:p-10 lg:p-12 border border-slate-800 shadow-xl">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div class="lg:col-span-7 space-y-4">
+              <span class="px-3 py-1 rounded-full text-xs font-bold bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                Ready for Interview &amp; Technical Tax/Excel Test
+              </span>
+              <h2 class="text-2xl sm:text-3xl lg:text-4xl font-display font-extrabold">
+                Siap Berkontribusi sebagai Tax Staff, Tax Compliance &amp; Tax Reporting
+              </h2>
+              <p class="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
+                Hubungi saya untuk diskusi rekrutmen, pengujian teknis penyusunan SPT (e-Bupot, e-Faktur, BPPU, Coretax, Rekonsiliasi Fiskal), maupun demonstrasi <strong>Sistem Siklus Akuntansi Excel Macro VBA</strong>.
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-xs sm:text-sm">
+                <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between gap-2">
+                  <div>
+                    <div class="text-slate-400 text-xs">Email</div>
+                    <div class="font-semibold text-white">affanhafiznivasla@gmail.com</div>
+                  </div>
+                  <button type="button" data-copy="affanhafiznivasla@gmail.com" class="btn-copy-text px-2.5 py-1 rounded-lg bg-white/10 hover:bg-emerald-600 text-xs font-semibold transition">
+                    Salin
+                  </button>
+                </div>
+
+                <div class="p-3.5 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-between gap-2">
+                  <div>
+                    <div class="text-slate-400 text-xs">WhatsApp / Telepon</div>
+                    <div class="font-semibold text-white">+62 877-8152-7249</div>
+                  </div>
+                  <button type="button" data-copy="+6287781527249" class="btn-copy-text px-2.5 py-1 rounded-lg bg-white/10 hover:bg-emerald-600 text-xs font-semibold transition">
+                    Salin
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Interactive Message Composer for HRD / Recruiter -->
+            <div class="lg:col-span-5 bg-slate-950/80 rounded-2xl p-5 sm:p-6 border border-slate-800 space-y-3">
+              <h3 class="text-sm font-bold text-emerald-400 uppercase tracking-wider">Kirim Pesan Cepat (WhatsApp / Email)</h3>
+              <div>
+                <label for="recruiterNameInput" class="block text-xs text-slate-400 mb-1">Nama Anda / Perusahaan</label>
+                <input id="recruiterNameInput" type="text" placeholder="Contoh: HRD PT Maju Bersama" class="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:outline-none focus:border-emerald-500" />
+              </div>
+              <div>
+                <label for="recruiterRoleSelect" class="block text-xs text-slate-400 mb-1">Posisi yang Ditawarkan</label>
+                <select id="recruiterRoleSelect" class="w-full px-3 py-2 rounded-xl bg-slate-900 border border-slate-700 text-white text-xs sm:text-sm focus:outline-none focus:border-emerald-500">
+                  <option value="Tax Staff">Tax Staff</option>
+                  <option value="Tax Compliance Specialist / Support">Tax Compliance Specialist / Support</option>
+                  <option value="Tax Reporting Staff">Tax Reporting Staff</option>
+                  <option value="Accounting & Tax Staff">Accounting &amp; Tax Staff</option>
+                </select>
+              </div>
+              <div class="pt-2 flex flex-col sm:flex-row gap-2">
+                <button id="btnSendWaRecruiter" type="button" class="flex-1 py-2.5 px-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs sm:text-sm font-semibold transition text-center">
+                  💬 Hubungi via WhatsApp
+                </button>
+                <button id="btnSendEmailRecruiter" type="button" class="py-2.5 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs sm:text-sm font-semibold transition text-center">
+                  ✉️ Buka Draft Email
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 text-slate-400 py-8 border-t border-slate-900 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        <span class="font-bold text-white">Affan Hafizni Vasla, CTT</span> • Tax Staff | Tax Compliance | Tax Reporting • Kota Bekasi
+      </div>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="https://bit.ly/4wsW79W" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition font-semibold text-emerald-400">Mini Project Pajak (bit.ly/4wsW79W) ↗</a>
+        <a href="https://www.linkedin.com/posts/affan-h-v-4a3848237_pelatihan-excel-by-karirnex-activity-7432097092699041792-4E8_" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">LinkedIn Excel Project ↗</a>
+        <a href="https://routind.com/certificates/RTND-26BGLEBY" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">Verifikasi Routind ↗</a>
+        <a href="https://lp.smartcounting.id/certificate/SAA-26YN7JJY" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">Verifikasi Accurate ↗</a>
+        <a href="https://lp.smartcounting.id/certificate/SAA-26HKPN7F" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition">Verifikasi Zahir ↗</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL 1: STUDIO FOTO PROFESIONAL (Upload, Zoom, Pan & Export HTML) -->
+  <div id="photoModal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-lg w-full border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h3 class="text-base font-display font-bold text-slate-900 dark:text-white">📷 Studio Foto Profil Portofolio</h3>
+          <p class="text-xs text-slate-500">Pilih foto formal dari perangkatmu, atur posisi, lalu terapkan.</p>
+        </div>
+        <button id="btnClosePhotoModal" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">✕</button>
+      </div>
+
+      <div class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">1. Pilih File Foto dari HP / Laptop (.jpg, .png, .webp)</label>
+          <input id="photoFileInput" type="file" accept="image/*" class="w-full text-xs text-slate-600 dark:text-slate-300 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-emerald-600 file:text-white hover:file:bg-emerald-500 cursor-pointer" />
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div>
+            <label for="photoZoomRange" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Perbesar (Zoom): <span id="zoomValLabel">100%</span></label>
+            <input id="photoZoomRange" type="range" min="100" max="180" value="100" class="w-full accent-emerald-600" />
+          </div>
+          <div>
+            <label for="photoPosYRange" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Posisi Vertikal: <span id="posYValLabel">50%</span></label>
+            <input id="photoPosYRange" type="range" min="0" max="100" value="50" class="w-full accent-emerald-600" />
+          </div>
+        </div>
+
+        <div class="p-3.5 rounded-2xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800/60 text-xs text-emerald-900 dark:text-emerald-200 space-y-1">
+          <div class="font-bold">💡 Tips Foto Portofolio Pajak &amp; Akuntansi:</div>
+          <p>Gunakan foto formal/semi-formal (kemeja rapi atau jas). Setelah selesai, klik <strong>"Unduh HTML Permanen"</strong> agar fotomu langsung tertanam di dalam file web.</p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-between gap-2 pt-2">
+          <button id="btnResetPhoto" type="button" class="px-3.5 py-2 rounded-xl border border-slate-300 dark:border-slate-700 text-xs font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800">
+            Reset ke Default
+          </button>
+          <div class="flex items-center gap-2">
+            <button id="btnDownloadStandaloneHtml" type="button" class="px-3.5 py-2 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-700 text-white text-xs font-semibold transition">
+              💾 Unduh HTML Permanen
+            </button>
+            <button id="btnSavePhotoModal" type="button" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition">
+              Selesai &amp; Terapkan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 2: PANDUAN PEMULA HOSTING & PASANG LINK DI CV / LINKEDIN / GLINTS / JOBSTREET -->
+  <div id="guideModal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-2xl w-full max-h-[88vh] flex flex-col border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h3 class="text-base sm:text-lg font-display font-bold text-slate-900 dark:text-white">🚀 Panduan Pemula: Cara Menjadikan Web Ini Link Online Gratis</h3>
+          <p class="text-xs text-slate-500">Langkah mudah tanpa coding untuk dipasang di CV, LinkedIn, JobStreet, dan Glints.</p>
+        </div>
+        <button id="btnCloseGuideModal" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">✕</button>
+      </div>
+
+      <div class="p-6 overflow-y-auto custom-scrollbar space-y-5 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white">Langkah 1: Masukkan Detail Sistem Siklus Akuntansi Macro VBA Kamu</div>
+          <p>Data dari CV terbarumu (termasuk fokus <strong>Tax Staff | Tax Compliance | Tax Reporting</strong> dan link <code>https://bit.ly/4wsW79W</code>) sudah terpasang. Selanjutnya, ceritakan sistem siklus akuntansi Macro VBA buatanmu di chat agar aku lengkapi bagian Proyek Unggulan.</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/70 border border-slate-200 dark:border-slate-700 space-y-2">
+          <div class="font-bold text-slate-900 dark:text-white">Langkah 2: Ubah File HTML Menjadi Link Website Gratis (3 Menit)</div>
+          <p>Setelah foto dan sistem VBA kamu masuk, klik tombol <strong>"Unduh HTML Permanen"</strong> (di menu Atur Foto), lalu unggah file <code>index.html</code> ke salah satu layanan gratis ini:</p>
+          <ul class="list-disc list-inside space-y-1">
+            <li><strong>Netlify Drop (app.netlify.com/drop):</strong> Cukup tarik (drag-and-drop) file HTML kamu, langsung dapat link seperti <code>affan-vasla-ctt.netlify.app</code>.</li>
+            <li><strong>Tiiny.host / GitHub Pages / Vercel:</strong> Gratis dan bisa langsung diklik oleh HRD dari CV PDF, LinkedIn, Glints, maupun JobStreet.</li>
+          </ul>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-emerald-50 dark:bg-emerald-950/40 border border-emerald-200 dark:border-emerald-800/60 space-y-3">
+          <div class="font-bold text-emerald-900 dark:text-emerald-300">Langkah 3: Template Teks Siap Pakai untuk JobStreet, Glints &amp; LinkedIn</div>
+          <p class="text-xs">Klik tombol salin di bawah ini saat mengisi kolom <strong>Portfolio / Ringkasan</strong> di platform lamaran kerja:</p>
+          <div class="p-3 rounded-xl bg-white dark:bg-slate-900 border border-emerald-200 dark:border-slate-700 text-xs font-mono text-slate-700 dark:text-slate-200" id="pitchTemplateText">
+Portofolio Web Interaktif Affan Hafizni Vasla, CTT (Tax Staff | Tax Compliance | Tax Reporting) — Memuat Studi Kasus Pelaporan SPT Masa PPh 21 (e-Bupot), SPT Masa PPN (e-Faktur), SPT PPh Unifikasi (BPPU), SPT Tahunan PPh Badan &amp; Rekonsiliasi Fiskal (Coretax), Sertifikasi CTT ATPI &amp; Brevet A-B, serta Sistem Siklus Akuntansi Berbasis Excel Macro VBA.
+          </div>
+          <button id="btnCopyGuidePitch" type="button" class="px-3.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition">
+            📋 Salin Deskripsi Portofolio
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 3: CERTIFICATE DETAIL & VERIFICATION MODAL -->
+  <div id="certDetailModal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-xl w-full border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <span id="certModalCategory" class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">Sertifikasi</span>
+        <button id="btnCloseCertModal" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">✕</button>
+      </div>
+      <div class="p-6 space-y-4">
+        <div>
+          <h3 id="certModalTitle" class="text-xl font-display font-bold text-slate-900 dark:text-white"></h3>
+          <p id="certModalIssuer" class="text-xs sm:text-sm font-semibold text-emerald-600 dark:text-emerald-400 mt-0.5"></p>
+        </div>
+        <div class="p-3.5 rounded-2xl bg-slate-50 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 text-xs space-y-1">
+          <div><span class="text-slate-400">Nomor Sertifikat:</span> <strong id="certModalNumber" class="text-slate-800 dark:text-slate-100"></strong></div>
+          <div><span class="text-slate-400">Tanggal Terbit:</span> <strong id="certModalDate" class="text-slate-800 dark:text-slate-100"></strong></div>
+        </div>
+        <div>
+          <div class="text-xs font-bold uppercase tracking-wider text-slate-400 mb-2">Materi &amp; Output Kompetensi (Sesuai CV Terbaru):</div>
+          <ul id="certModalModules" class="space-y-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300 list-disc list-inside max-h-56 overflow-y-auto custom-scrollbar"></ul>
+        </div>
+        <div id="certModalLinkWrapper" class="pt-3 border-t border-slate-100 dark:border-slate-800 flex justify-end">
+          <a id="certModalVerifyLink" href="#sertifikasi" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition">
+            🔗 Buka Link Verifikasi Resmi ↗
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL 4: VBA ACCOUNTING SYSTEM CUSTOMIZER & DOUBLE-ENTRY SIMULATOR -->
+  <div id="vbaSimulatorModal" class="hidden fixed inset-0 z-50 bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-slate-900 rounded-3xl max-w-2xl w-full max-h-[90vh] flex flex-col border border-slate-200 dark:border-slate-800 shadow-2xl overflow-hidden">
+      <div class="px-6 py-4 border-b border-slate-200 dark:border-slate-800 flex items-center justify-between">
+        <div>
+          <h3 class="text-base sm:text-lg font-display font-bold text-slate-900 dark:text-white">⚡ Preview Interaktif &amp; Kustomisasi Sistem Siklus Akuntansi VBA</h3>
+          <p class="text-xs text-slate-500">Rekruter dapat mencoba simulasi validasi jurnal, dan kamu bisa menyesuaikan nama proyekmu.</p>
+        </div>
+        <button id="btnCloseVbaModal" type="button" class="p-1.5 rounded-lg text-slate-400 hover:text-slate-700 dark:hover:text-white">✕</button>
+      </div>
+
+      <div class="p-6 overflow-y-auto custom-scrollbar space-y-6">
+        <!-- Mini Interactive Double-Entry Validator (Shows recruiters how VBA UserForm works) -->
+        <div class="p-4 rounded-2xl bg-slate-900 text-white border border-slate-700 space-y-3">
+          <div class="flex items-center justify-between">
+            <span class="text-xs font-bold text-emerald-400 uppercase tracking-wider">Simulasi UserForm Jurnal Umum (Macro VBA)</span>
+            <span id="simBalanceBadge" class="px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-300">SEIMBANG (BALANCE)</span>
+          </div>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs">
+            <div>
+              <label for="simDebitAccount" class="block text-slate-400 mb-1">Akun Debit</label>
+              <input id="simDebitAccount" type="text" value="1101 - Kas / Bank" class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-white" />
+            </div>
+            <div>
+              <label for="simDebitAmount" class="block text-slate-400 mb-1">Nominal Debit (Rp)</label>
+              <input id="simDebitAmount" type="number" value="11100000" class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-white" />
+            </div>
+            <div>
+              <label for="simCreditAccount" class="block text-slate-400 mb-1">Akun Kredit (Penjualan + PPN 11%)</label>
+              <input id="simCreditAccount" type="text" value="4101 - Penjualan & 2105 - PPN Keluaran" class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-white" />
+            </div>
+            <div>
+              <label for="simCreditAmount" class="block text-slate-400 mb-1">Nominal Kredit (Rp)</label>
+              <input id="simCreditAmount" type="number" value="11100000" class="w-full px-3 py-1.5 rounded-lg bg-slate-800 border border-slate-700 text-white" />
+            </div>
+          </div>
+          <div class="flex items-center justify-between pt-2 border-t border-slate-800 text-xs">
+            <span id="simStatusMessage" class="text-emerald-300">✔ Validasi VBA: Debit &amp; Kredit seimbang (Rp 11.100.000). Siap posting ke Buku Besar!</span>
+            <button id="btnTestPostJournal" type="button" class="px-3 py-1.5 rounded-lg bg-emerald-600 hover:bg-emerald-500 text-white font-semibold transition">
+              Posting Jurnal
+            </button>
+          </div>
+        </div>
+
+        <!-- Customizer Form for Phase 2 -->
+        <div class="space-y-3">
+          <h4 class="text-xs font-bold uppercase tracking-wider text-slate-500">Kustomisasi Judul &amp; Deskripsi Proyek VBA Kamu:</h4>
+          <div>
+            <label for="inputCustomVbaTitle" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Nama Sistem / Aplikasi Excel VBA</label>
+            <input id="inputCustomVbaTitle" type="text" value="Sistem Siklus Akuntansi Terintegrasi Berbasis Excel Macro VBA" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs sm:text-sm" />
+          </div>
+          <div>
+            <label for="inputCustomVbaDesc" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1">Deskripsi Singkat Sistem</label>
+            <textarea id="inputCustomVbaDesc" rows="3" class="w-full px-3 py-2 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-300 dark:border-slate-700 text-xs sm:text-sm">Aplikasi kerja berbasis Microsoft Excel Macro VBA yang dirancang untuk mengotomasi siklus akuntansi secara end-to-end—mulai dari pengaturan Chart of Accounts (COA), input transaksi via UserForm tervalidasi, posting otomatis ke Buku Besar, hingga penyusunan Neraca Lajur dan Laporan Keuangan yang siap menjadi dasar Rekonsiliasi Fiskal.</textarea>
+          </div>
+          <div class="flex justify-end gap-2">
+            <button id="btnApplyVbaCustom" type="button" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-semibold transition">
+              Simpan Perubahan ke Portofolio
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toastNotification" class="fixed bottom-5 right-5 z-50 transform translate-y-20 opacity-0 pointer-events-none transition-all duration-300 px-4 py-3 rounded-2xl bg-slate-900 text-white border border-emerald-500/40 shadow-2xl text-xs sm:text-sm font-medium flex items-center gap-2">
+    <span class="text-emerald-400">✔</span>
+    <span id="toastMessage">Berhasil disalin!</span>
+  </div>
+
+  <script>
+    // ==========================================
+    // GROUNDED DATA FROM AFFAN'S UPDATED CV (58ff6b60.pdf)
+    // ==========================================
+    const vbaCycleSteps = [
+      {
+        step: "01",
+        title: "Setup COA & Saldo Awal",
+        subtitle: "Master Data Akun",
+        desc: "Modul pengaturan kode dan nama akun (Chart of Accounts) beserta validasi keseimbangan Saldo Awal Neraca sebelum transaksi berjalan dimulai.",
+        vbaFeature: "Macro Validasi Kode Akun Unik & Otomasi Kelompok Akun (Aset, Liabilitas, Ekuitas, Pendapatan, Beban)."
+      },
+      {
+        step: "02",
+        title: "Input Jurnal Umum",
+        subtitle: "VBA UserForm / Tabel",
+        desc: "Pencatatan transaksi harian terstruktur dengan proteksi keseimbangan Debit & Kredit otomatis serta penomoran bukti jurnal berurutan.",
+        vbaFeature: "Sub SimpanJurnal_Click() dengan pengecekan selisih Debit = Kredit (Double-Entry Guard)."
+      },
+      {
+        step: "03",
+        title: "Posting Buku Besar",
+        subtitle: "General Ledger Otomatis",
+        desc: "Mengelompokkan dan menghitung saldo berjalan (Running Balance) untuk setiap akun secara instan dari data Jurnal Umum.",
+        vbaFeature: "Otomasi filter & rekapitulasi mutasi per akun tanpa perlu copy-paste manual."
+      },
+      {
+        step: "04",
+        title: "Neraca Saldo & AJP",
+        subtitle: "Trial Balance & Penyesuaian",
+        desc: "Menyajikan ringkasan saldo sebelum penyesuaian dan memfasilitasi input Ayat Jurnal Penyesuaian (penyusutan aset, beban akrual, persediaan).",
+        vbaFeature: "Sinkronisasi otomatis saldo akun riil dan nominal ke Neraca Lajur."
+      },
+      {
+        step: "05",
+        title: "Neraca Lajur (Worksheet)",
+        subtitle: "Kertas Kerja 10 Kolom",
+        desc: "Menampilkan perbandingan otomatis Neraca Saldo, Penyesuaian, Neraca Saldo Disesuaikan (NSD), Laba Rugi, dan Neraca.",
+        vbaFeature: "Kalkulasi otomatis Laba/Rugi Bersih Komersial sebelum Rekonsiliasi Fiskal."
+      },
+      {
+        step: "06",
+        title: "Laporan Keuangan",
+        subtitle: "Laba Rugi, Ekuitas & Neraca",
+        desc: "Menghasilkan Laporan Laba Rugi, Laporan Perubahan Modal/Ekuitas, dan Laporan Posisi Keuangan (Neraca) siap cetak maupun lampiran SPT Badan.",
+        vbaFeature: "Macro Cetak / Export PDF Laporan Keuangan 1-Klik siap pakai untuk Rekonsiliasi Fiskal."
+      }
+    ];
+
+    const skillsData = [
+      // Tax Compliance (Exact match with new CV)
+      { name: "SPT Masa PPh Pasal 21", category: "tax", badge: "Tax Compliance" },
+      { name: "Pembuatan e-Bupot PPh 21", category: "tax", badge: "Tax Compliance" },
+      { name: "SPT Masa PPN", category: "tax", badge: "Nilai Brevet A+" },
+      { name: "Pembuatan e-Faktur PPN", category: "tax", badge: "Tax Compliance" },
+      { name: "SPT Masa PPh Unifikasi", category: "tax", badge: "Tax Compliance" },
+      { name: "Bukti Potong Unifikasi (BPPU)", category: "tax", badge: "Tax Compliance" },
+      { name: "SPT Tahunan PPh Badan", category: "tax", badge: "Nilai Brevet A" },
+      { name: "Rekonsiliasi Fiskal", category: "tax", badge: "Tax Reporting" },
+      { name: "Administrasi Coretax", category: "tax", badge: "Tersertifikasi" },
+      { name: "SPT Tahunan PPh OP", category: "tax", badge: "Nilai Brevet A" },
+      { name: "KUP, PBB, BPHTB & Meterai", category: "tax", badge: "CTT ATPI" },
+      // Accounting & Software (Exact match with new CV)
+      { name: "Accurate Online", category: "accounting", badge: "8 Modul Lulus" },
+      { name: "Zahir Accounting Online", category: "accounting", badge: "7 Modul Lulus" },
+      { name: "Akuntansi Perpajakan & Laporan Keuangan", category: "accounting", badge: "Nilai Brevet A+" },
+      // Excel & VBA (Exact match with new CV: Pivot Table, XLOOKUP, VLOOKUP, IF, SUMIFS + Macro VBA)
+      { name: "Excel Macro VBA (Siklus Akuntansi)", category: "data", badge: "System Builder" },
+      { name: "Pivot Table & Pivot Chart", category: "data", badge: "Excel Intermediate" },
+      { name: "XLOOKUP & VLOOKUP", category: "data", badge: "Lookup Formula" },
+      { name: "IF & Applied Logic", category: "data", badge: "Logical Formula" },
+      { name: "SUMIFS, COUNT & AVERAGE", category: "data", badge: "Data Aggregation" },
+      { name: "Data Validation & Dashboard", category: "data", badge: "KarirNex Bootcamp" }
+    ];
+
+    const atpiUnits = [
+      { code: "692000.001.01", title: "Pengetahuan Perpajakan Indonesia" },
+      { code: "692000.001.02", title: "PPh Orang Pribadi & PPh Badan" },
+      { code: "692000.002.02", title: "PPh Pasal 21/26" },
+      { code: "692000.003.02", title: "PPh Pasal 22, 23, 4(2), dan 15" },
+      { code: "692000.004.02", title: "Pajak Pertambahan Nilai (PPN) & PPnBM" },
+      { code: "692000.005.02", title: "Ketentuan Umum dan Tata Cara Perpajakan (KUP)" },
+      { code: "692000.002.01", title: "Kode Etik Umum dan Standar Profesi" },
+      { code: "692000.003.01", title: "Teknisi Perpajakan" },
+      { code: "692000.013.02", title: "Akuntansi Perpajakan 1" },
+      { code: "692000.006.02", title: "Pajak Bumi dan Bangunan (PBB)" },
+      { code: "692000.007.02", title: "Bea Perolehan Hak Atas Tanah dan Bangunan (BPHTB)" },
+      { code: "692000.008.02", title: "Bea Meterai" },
+      { code: "692000.004.01", title: "Pajak Daerah dan Retribusi Daerah" },
+      { code: "692000.005.01", title: "Pengadilan Pajak" },
+      { code: "692000.006.01", title: "Penagihan Pajak dengan Surat Paksa" },
+      { code: "692000.012.02", title: "Akuntansi Perpajakan 2 & DJP Online (692000.001.03)" }
+    ];
+
+    const certificatesData = [
+      {
+        id: "ctt",
+        category: "tax",
+        badge: "Sertifikasi Profesi (Gelar CTT)",
+        title: "Certified Tax Technician (CTT) — Asosiasi Teknisi Perpajakan Indonesia (ATPI)",
+        issuer: "Asosiasi Teknisi Perpajakan Indonesia (ATPI)",
+        number: "025.849/PTSP-TP/ATPI/V/2026 | Reg: CTT 04.05.000.025.849 2026",
+        date: "05/2026 (7 Mei 2026 • Berlaku 5 Tahun)",
+        verifyUrl: "",
+        modules: [
+          "Memperoleh gelar profesi non-akademik Certified Tax Technician (CTT) sebagai bukti kompetensi di bidang perpajakan.",
+          "Lulus uji kompetensi Teknisi Perpajakan Madya setelah menyelesaikan Brevet Pajak A & B.",
+          "Memiliki kompetensi dalam penerapan regulasi perpajakan, administrasi perpajakan, perhitungan pajak, dan pelaporan pajak sesuai ketentuan yang berlaku.",
+          "Output Kompetensi: Mampu menganalisis dan menerapkan peraturan perpajakan Indonesia dalam administrasi, perhitungan, dan pelaporan pajak."
+        ]
+      },
+      {
+        id: "brevet",
+        category: "tax",
+        badge: "Brevet Pajak A & B (2.280 Menit)",
+        title: "Pelatihan Pajak Terapan Brevet A & B",
+        issuer: "Routind Academy & Unggul Tax Academy",
+        number: "01379/RTND/05/2026 (No. Peserta: 26170101166)",
+        date: "04/2026 – 05/2026 (28 Mei 2026)",
+        verifyUrl: "",
+        modules: [
+          "Mempelajari ketentuan perpajakan Indonesia meliputi KUP, PPh Orang Pribadi, PPh Badan, PPN, PPnBM, Bea Meterai, BPHTB, serta PPh Pasal 21/26, 22, 23, 4(2), dan 15.",
+          "Memahami tata cara administrasi perpajakan, penyusunan SPT Tahunan, e-Bupot, SPT PPh Unifikasi, dan Bukti Potong Unifikasi (BPU).",
+          "Mempelajari konsep PPN, mekanisme e-Faktur, serta prosedur pelaporan perpajakan sesuai regulasi.",
+          "Output Kompetensi: Menguasai dasar teori perpajakan, administrasi perpajakan, dan penyusunan dokumen perpajakan sesuai ketentuan yang berlaku."
+        ]
+      },
+      {
+        id: "coretax",
+        category: "tax",
+        badge: "Aplikasi Perpajakan & Coretax",
+        title: "Pelatihan Peningkatan Kompetensi Aplikasi Perpajakan",
+        issuer: "Routind Academy",
+        number: "01549/RTND/05/2026",
+        date: "05/2026 (28 Mei 2026)",
+        verifyUrl: "https://routind.com/certificates/RTND-26BGLEBY",
+        modules: [
+          "Melakukan praktik penggunaan aplikasi perpajakan untuk administrasi dan pelaporan pajak.",
+          "Menyusun dan melaporkan SPT Tahunan PPh Orang Pribadi, PPh Badan, SPT Masa PPN, dan SPT PPh Unifikasi.",
+          "Membuat e-Bupot, e-Faktur, dan Kode Billing melalui aplikasi perpajakan serta validasi dokumen perpajakan.",
+          "Output Kompetensi: Menguasai dalam pembuatan e-Faktur, e-Bupot, Bukti Potong PPh Unifikasi (BPPU), Rekonsiliasi Fiskal dan penyusunan pelaporan SPT Masa PPN, SPT Masa PPh 21/26, SPT Masa PPh Unifikasi, dan SPT Badan."
+        ]
+      },
+      {
+        id: "accurate",
+        category: "accounting",
+        badge: "Cloud Accounting ERP",
+        title: "Accurate Online — Smartcounting Academy",
+        issuer: "Smartcounting Academy Training Center & Research",
+        number: "04396/ACD-SA/II/2026",
+        date: "02/2026 (19 Februari 2026)",
+        verifyUrl: "https://lp.smartcounting.id/certificate/SAA-26YN7JJY",
+        modules: [
+          "Melakukan setup database perusahaan, chart of accounts (COA), transaksi pembelian dan penjualan, kas/bank, jurnal umum, persediaan, aset tetap, serta laporan keuangan.",
+          "Lulus 8 Modul Pembelajaran: Setup Database, Purchase Module, Sales Module, Inventory Module, Fixed Asset Module, Cash Bank Module, General Ledger Module, dan Penyajian Laporan Keuangan."
+        ]
+      },
+      {
+        id: "zahir",
+        category: "accounting",
+        badge: "Cloud Accounting ERP",
+        title: "Zahir Accounting Online — Smartcounting Academy",
+        issuer: "Smartcounting Academy Training Center & Research",
+        number: "03239/ZA/II/2026",
+        date: "02/2026 (12 Februari 2026)",
+        verifyUrl: "https://lp.smartcounting.id/certificate/SAA-26HKPN7F",
+        modules: [
+          "Melakukan setup database, chart of accounts (COA), transaksi purchase dan sales, input jurnal umum, pengelolaan persediaan, serta laporan keuangan otomatis.",
+          "Lulus 7 Modul Pembelajaran lengkap dari Setup Awal hingga Penyajian Laporan Keuangan."
+        ]
+      },
+      {
+        id: "excel",
+        category: "excel",
+        badge: "Predikat Intermediate + Surat Rekomendasi",
+        title: "Microsoft Excel Bootcamp — KarirNex by PT Ebiz Karisma Internasional",
+        issuer: "KarirNex by PT Ebiz Karisma Internasional",
+        number: "1286/B-1/KBT.EXCEL.6/KRX/II/2026 | Ref: 1513/B/SRK/EXCEL/EKI/II/2026",
+        date: "02/2026 (25 Februari 2026)",
+        verifyUrl: "https://www.linkedin.com/posts/affan-h-v-4a3848237_pelatihan-excel-by-karirnex-activity-7432097092699041792-4E8_",
+        modules: [
+          "Mengolah data menggunakan Microsoft Excel, termasuk SUM, AVERAGE, IF, COUNT, VLOOKUP, XLOOKUP, SUMIFS, Pivot Table, Pivot Chart, Data Validation, dan dashboard sederhana.",
+          "Mempelajari Basic Macro VBA serta menyelesaikan Mini Project: Preparing an E-Commerce Sales Report and Dashboard for KarirNex Grocery Store."
+        ]
+      },
+      {
+        id: "coretax_camp",
+        category: "tax",
+        badge: "Panitia (Koordinator Acara) & Peserta",
+        title: "Coretax Action Camp (From Training to Real Action)",
+        issuer: "Tax Center Ubhara Jaya & DJP Renjani",
+        number: "001/I/2026/SERTIF-PANITIACORETAX & 002/I/2026/SERTIF-PESERTA",
+        date: "Periode 2025/2026",
+        verifyUrl: "",
+        modules: [
+          "Sertifikat Penghargaan sebagai Panitia (Koordinator Acara) Coretax Action Camp Tax Center Ubhara Jaya.",
+          "Sertifikat Pelatihan sebagai Peserta aktif simulasi implementasi Coretax Direktorat Jenderal Pajak."
+        ]
+      }
+    ];
+
+    // ==========================================
+    // STATE & UI RENDER FUNCTIONS
+    // ==========================================
+    let activeVbaStepIndex = 1; // Default highlight Step 02 (Input Jurnal VBA)
+    let activeSkillFilter = "all";
+    let activeCertFilter = "all";
+    let isRecruiterMode = false;
+
+    function showToast(msg) {
+      const toast = document.getElementById("toastNotification");
+      const text = document.getElementById("toastMessage");
+      text.textContent = msg;
+      toast.classList.remove("translate-y-20", "opacity-0");
+      setTimeout(() => {
+        toast.classList.add("translate-y-20", "opacity-0");
+      }, 2800);
+    }
+
+    function copyTextToClipboard(str, label) {
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(str).then(() => {
+            showToast(label || "Teks berhasil disalin ke clipboard!");
+          }).catch(() => fallbackCopy(str, label));
+        } else {
+          fallbackCopy(str, label);
+        }
+      } catch (e) {
+        fallbackCopy(str, label);
+      }
+    }
+
+    function fallbackCopy(str, label) {
+      const ta = document.createElement("textarea");
+      ta.value = str;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try {
+        document.execCommand("copy");
+        showToast(label || "Teks berhasil disalin!");
+      } catch (err) {
+        showToast("Silakan salin secara manual.");
+      }
+      document.body.removeChild(ta);
+    }
+
+    // 1. Render VBA Accounting Cycle Interactive Steps
+    function renderVbaCycle() {
+      const grid = document.getElementById("vbaCycleStepsGrid");
+      const detail = document.getElementById("vbaActiveStepCard");
+
+      grid.innerHTML = vbaCycleSteps.map((item, idx) => {
+        const isActive = idx === activeVbaStepIndex;
+        return `
+          <button type="button" data-vba-step="${idx}" class="vba-step-btn text-left p-3 rounded-xl border transition-all ${
+            isActive
+              ? "bg-emerald-600/25 border-emerald-400 text-white shadow-md"
+              : "bg-slate-900/70 border-slate-800 text-slate-300 hover:border-slate-600"
+          }">
+            <div class="flex items-center justify-between text-[11px] font-bold ${isActive ? "text-emerald-300" : "text-slate-400"}">
+              <span>TAHAP ${item.step}</span>
+              <span>${isActive ? "● Aktif" : "→"}</span>
+            </div>
+            <div class="font-bold text-xs sm:text-sm mt-1 text-white">${item.title}</div>
+            <div class="text-[11px] text-slate-400 truncate">${item.subtitle}</div>
+          </button>
+        `;
+      }).join("");
+
+      const current = vbaCycleSteps[activeVbaStepIndex];
+      detail.innerHTML = `
+        <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+          <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-emerald-500 text-slate-950">
+            Tahap ${current.step}: ${current.title}
+          </span>
+          <span class="text-xs text-emerald-300 font-medium">${current.subtitle}</span>
+        </div>
+        <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mb-3">${current.desc}</p>
+        <div class="p-3 rounded-lg bg-slate-950/90 border border-slate-800 text-xs text-emerald-300 font-mono">
+          ⚙️ <strong>Komponen Macro VBA:</strong> ${current.vbaFeature}
+        </div>
+      `;
+
+      document.querySelectorAll(".vba-step-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeVbaStepIndex = parseInt(btn.getAttribute("data-vba-step"), 10);
+          renderVbaCycle();
+        });
+      });
+    }
+
+    // 2. Render Filterable Skills Grid
+    function renderSkills() {
+      const grid = document.getElementById("skillsGrid");
+      const filtered = activeSkillFilter === "all"
+        ? skillsData
+        : skillsData.filter(s => s.category === activeSkillFilter);
+
+      grid.innerHTML = filtered.map(item => {
+        let dotColor = "bg-emerald-500";
+        if (item.category === "accounting") dotColor = "bg-blue-500";
+        if (item.category === "data") dotColor = "bg-amber-500";
+        return `
+          <div class="p-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200/90 dark:border-slate-800 shadow-sm hover:border-emerald-500/50 transition flex flex-col justify-between">
+            <div class="flex items-center justify-between gap-1 mb-1.5">
+              <span class="w-2 h-2 rounded-full ${dotColor}"></span>
+              <span class="text-[10px] font-semibold px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800 text-slate-500 dark:text-slate-400">${item.badge}</span>
+            </div>
+            <div class="font-bold text-xs sm:text-sm text-slate-800 dark:text-slate-100 leading-snug">${item.name}</div>
+          </div>
+        `;
+      }).join("");
+    }
+
+    // 3. Render ATPI 16 Competency Units Table
+    function renderAtpiUnits() {
+      const tbody = document.getElementById("atpiUnitsTableBody");
+      tbody.innerHTML = atpiUnits.map(u => `
+        <tr class="hover:bg-slate-50 dark:hover:bg-slate-800/50">
+          <td class="py-2 px-3 font-mono text-[11px] text-slate-500 dark:text-slate-400">${u.code}</td>
+          <td class="py-2 px-3 font-medium text-slate-800 dark:text-slate-200">${u.title}</td>
+          <td class="py-2 px-3 text-right">
+            <span class="px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-300">KOMPETEN</span>
+          </td>
+        </tr>
+      `).join("");
+    }
+
+    // 4. Render Certificates Vault
+    function renderCertificates() {
+      const grid = document.getElementById("certificatesGrid");
+      const filtered = activeCertFilter === "all"
+        ? certificatesData
+        : certificatesData.filter(c => c.category === activeCertFilter);
+
+      grid.innerHTML = filtered.map(c => `
+        <div class="rounded-2xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 p-6 flex flex-col justify-between hover:border-emerald-500/60 hover:shadow-md transition">
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-3">
+              <span class="px-2.5 py-1 rounded-full text-[11px] font-bold bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 border border-emerald-500/20">
+                ${c.badge}
+              </span>
+              <span class="text-[11px] text-slate-400">${c.date.split("(")[0].trim()}</span>
+            </div>
+            <h3 class="text-base sm:text-lg font-display font-bold text-slate-900 dark:text-white leading-snug">
+              ${c.title}
+            </h3>
+            <p class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-1">${c.issuer}</p>
+            <p class="text-[11px] font-mono text-slate-500 dark:text-slate-400 mt-2">No: ${c.number}</p>
+          </div>
+
+          <div class="mt-5 pt-4 border-t border-slate-200/80 dark:border-slate-700/80 flex items-center justify-between gap-2">
+            <button type="button" data-cert-open="${c.id}" class="btn-open-cert px-3 py-1.5 rounded-xl bg-slate-900 dark:bg-slate-700 hover:bg-emerald-600 text-white text-xs font-semibold transition">
+              Lihat Output &amp; Modul
+            </button>
+            ${
+              c.verifyUrl
+                ? `<a href="${c.verifyUrl}" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:underline">Verifikasi Resmi ↗</a>`
+                : `<span class="text-[11px] text-slate-400">Terlampir di Dokumen CV</span>`
+            }
+          </div>
+        </div>
+      `).join("");
+
+      attachCertModalTriggers();
+    }
+
+    function attachCertModalTriggers() {
+      document.querySelectorAll(".btn-open-cert").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const certId = btn.getAttribute("data-cert-open");
+          const cert = certificatesData.find(item => item.id === certId);
+          if (!cert) return;
+
+          document.getElementById("certModalCategory").textContent = cert.badge;
+          document.getElementById("certModalTitle").textContent = cert.title;
+          document.getElementById("certModalIssuer").textContent = cert.issuer;
+          document.getElementById("certModalNumber").textContent = cert.number;
+          document.getElementById("certModalDate").textContent = cert.date;
+          document.getElementById("certModalModules").innerHTML = cert.modules
+            .map(m => `<li>${m}</li>`)
+            .join("");
+
+          const linkWrap = document.getElementById("certModalLinkWrapper");
+          const verifyLink = document.getElementById("certModalVerifyLink");
+          if (cert.verifyUrl) {
+            linkWrap.classList.remove("hidden");
+            verifyLink.href = cert.verifyUrl;
+          } else {
+            linkWrap.classList.add("hidden");
+          }
+
+          document.getElementById("certDetailModal").classList.remove("hidden");
+        });
+      });
+    }
+
+    // ==========================================
+    // INTERACTIVE CONTROLS & EVENT LISTENERS
+    // ==========================================
+    window.addEventListener("DOMContentLoaded", () => {
+      renderVbaCycle();
+      renderSkills();
+      renderAtpiUnits();
+      renderCertificates();
+
+      // Theme Toggle
+      const btnTheme = document.getElementById("btnThemeToggle");
+      const themeIcon = document.getElementById("themeIcon");
+      btnTheme.addEventListener("click", () => {
+        document.documentElement.classList.toggle("dark");
+        const isDark = document.documentElement.classList.contains("dark");
+        themeIcon.textContent = isDark ? "☀️" : "🌙";
+      });
+
+      // Mobile Menu Toggle
+      const btnMobileMenu = document.getElementById("btnMobileMenu");
+      const mobileMenuPanel = document.getElementById("mobileMenuPanel");
+      btnMobileMenu.addEventListener("click", () => {
+        mobileMenuPanel.classList.toggle("hidden");
+      });
+      document.querySelectorAll(".mobile-nav-link").forEach(link => {
+        link.addEventListener("click", () => mobileMenuPanel.classList.add("hidden"));
+      });
+
+      // Skill Filter Buttons
+      document.querySelectorAll(".skill-filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeSkillFilter = btn.getAttribute("data-skill-filter");
+          document.querySelectorAll(".skill-filter-btn").forEach(b => {
+            b.className = "skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:border-emerald-500 transition";
+          });
+          btn.className = "skill-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-emerald-600 text-white shadow-sm transition";
+          renderSkills();
+        });
+      });
+
+      // Certificate Filter Buttons
+      document.querySelectorAll(".cert-filter-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          activeCertFilter = btn.getAttribute("data-cert-filter");
+          document.querySelectorAll(".cert-filter-btn").forEach(b => {
+            b.className = "cert-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 transition";
+          });
+          btn.className = "cert-filter-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-900 dark:bg-emerald-600 text-white transition";
+          renderCertificates();
+        });
+      });
+
+      // Org / Edu / Case Study Tabs
+      const expTabBtns = document.querySelectorAll(".exp-tab-btn");
+      const tabPanels = {
+        work: document.getElementById("tabPanelWork"),
+        org: document.getElementById("tabPanelOrg"),
+        edu: document.getElementById("tabPanelEdu")
+      };
+      expTabBtns.forEach(btn => {
+        btn.addEventListener("click", () => {
+          const target = btn.getAttribute("data-exp-tab");
+          Object.keys(tabPanels).forEach(k => {
+            if (k === target) {
+              tabPanels[k].classList.remove("hidden");
+            } else {
+              tabPanels[k].classList.add("hidden");
+            }
+          });
+          expTabBtns.forEach(b => {
+            b.className = "exp-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition";
+          });
+          btn.className = "exp-tab-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-semibold bg-white dark:bg-slate-800 text-slate-900 dark:text-white shadow-sm transition";
+        });
+      });
+
+      // Recruiter Mode Toggle
+      const ownerBanner = document.getElementById("ownerBanner");
+      const btnToggleRecruiterView = document.getElementById("btnToggleRecruiterView");
+      const btnExitRecruiterView = document.getElementById("btnExitRecruiterView");
+
+      function setRecruiterView(enabled) {
+        isRecruiterMode = enabled;
+        const ownerElements = document.querySelectorAll(".owner-only");
+        if (enabled) {
+          ownerBanner.classList.add("hidden");
+          btnExitRecruiterView.classList.remove("hidden");
+          ownerElements.forEach(el => el.classList.add("hidden"));
+          showToast("Mode Simulasi HRD aktif: menampilkan tampilan bersih untuk rekruter.");
+        } else {
+          ownerBanner.classList.remove("hidden");
+          btnExitRecruiterView.classList.add("hidden");
+          ownerElements.forEach(el => el.classList.remove("hidden"));
+          showToast("Kembali ke Mode Desain Portofolio.");
+        }
+      }
+
+      btnToggleRecruiterView.addEventListener("click", () => setRecruiterView(true));
+      btnExitRecruiterView.addEventListener("click", () => setRecruiterView(false));
+
+      // Photo Studio Modal & File Upload Logic
+      const photoModal = document.getElementById("photoModal");
+      const openPhotoBtns = [
+        document.getElementById("btnOpenPhotoModalTop"),
+        document.getElementById("btnOpenPhotoModalCard"),
+        document.getElementById("btnOverlayPhotoUpload")
+      ];
+      openPhotoBtns.forEach(b => {
+        if (b) b.addEventListener("click", () => photoModal.classList.remove("hidden"));
+      });
+      document.getElementById("btnClosePhotoModal").addEventListener("click", () => photoModal.classList.add("hidden"));
+      document.getElementById("btnSavePhotoModal").addEventListener("click", () => {
+        photoModal.classList.add("hidden");
+        showToast("Pengaturan foto profil berhasil diterapkan!");
+      });
+
+      const photoFileInput = document.getElementById("photoFileInput");
+      const userProfileImage = document.getElementById("userProfileImage");
+      const defaultAvatarPlaceholder = document.getElementById("defaultAvatarPlaceholder");
+      const photoZoomRange = document.getElementById("photoZoomRange");
+      const photoPosYRange = document.getElementById("photoPosYRange");
+
+      function updatePhotoTransform() {
+        const zoom = photoZoomRange.value;
+        const posY = photoPosYRange.value;
+        document.getElementById("zoomValLabel").textContent = zoom + "%";
+        document.getElementById("posYValLabel").textContent = posY + "%";
+        userProfileImage.style.transform = `scale(${zoom / 100})`;
+        userProfileImage.style.objectPosition = `50% ${posY}%`;
+      }
+
+      photoZoomRange.addEventListener("input", updatePhotoTransform);
+      photoPosYRange.addEventListener("input", updatePhotoTransform);
+
+      photoFileInput.addEventListener("change", (e) => {
+        const file = e.target.files && e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = function(evt) {
+          const dataUrl = evt.target.result;
+          userProfileImage.src = dataUrl;
+          userProfileImage.classList.remove("hidden");
+          defaultAvatarPlaceholder.classList.add("hidden");
+          try {
+            localStorage.setItem("affan_portfolio_photo", dataUrl);
+          } catch (err) {}
+          showToast("Foto berhasil diunggah ke portofolio!");
+        };
+        reader.readAsDataURL(file);
+      });
+
+      document.getElementById("btnResetPhoto").addEventListener("click", () => {
+        userProfileImage.src = "";
+        userProfileImage.classList.add("hidden");
+        defaultAvatarPlaceholder.classList.remove("hidden");
+        photoZoomRange.value = 100;
+        photoPosYRange.value = 50;
+        updatePhotoTransform();
+        try {
+          localStorage.removeItem("affan_portfolio_photo");
+        } catch (err) {}
+        showToast("Foto dikembalikan ke tampilan default.");
+      });
+
+      // Load saved photo if available in localStorage
+      try {
+        const savedPhoto = localStorage.getItem("affan_portfolio_photo");
+        if (savedPhoto) {
+          userProfileImage.src = savedPhoto;
+          userProfileImage.classList.remove("hidden");
+          defaultAvatarPlaceholder.classList.add("hidden");
+        }
+      } catch (err) {}
+
+      // Download Standalone HTML (with embedded photo and clean recruiter view)
+      document.getElementById("btnDownloadStandaloneHtml").addEventListener("click", () => {
+        const htmlClone = document.documentElement.cloneNode(true);
+        const cloneBanner = htmlClone.querySelector("#ownerBanner");
+        if (cloneBanner) cloneBanner.remove();
+        htmlClone.querySelectorAll(".owner-only").forEach(el => el.remove());
+        const serialized = "<!DOCTYPE html>\n" + htmlClone.outerHTML;
+        const blob = new Blob([serialized], { type: "text/html" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "index.html";
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        URL.revokeObjectURL(url);
+        showToast("File index.html siap di-upload ke Netlify Drop / GitHub Pages!");
+      });
+
+      // Guide Modal
+      const guideModal = document.getElementById("guideModal");
+      document.getElementById("btnOpenGuideModalTop").addEventListener("click", () => guideModal.classList.remove("hidden"));
+      document.getElementById("btnCloseGuideModal").addEventListener("click", () => guideModal.classList.add("hidden"));
+      document.getElementById("btnCopyGuidePitch").addEventListener("click", () => {
+        const txt = document.getElementById("pitchTemplateText").textContent.trim();
+        copyTextToClipboard(txt, "Deskripsi portofolio berhasil disalin!");
+      });
+
+      // Close Cert Modal
+      document.getElementById("btnCloseCertModal").addEventListener("click", () => {
+        document.getElementById("certDetailModal").classList.add("hidden");
+      });
+
+      // VBA Simulator & Customizer Modal
+      const vbaModal = document.getElementById("vbaSimulatorModal");
+      document.getElementById("btnOpenVbaCustomizer").addEventListener("click", () => vbaModal.classList.remove("hidden"));
+      document.getElementById("btnOpenVbaSimulatorModal").addEventListener("click", () => vbaModal.classList.remove("hidden"));
+      document.getElementById("btnCloseVbaModal").addEventListener("click", () => vbaModal.classList.add("hidden"));
+
+      const simDebitAmount = document.getElementById("simDebitAmount");
+      const simCreditAmount = document.getElementById("simCreditAmount");
+      const simBalanceBadge = document.getElementById("simBalanceBadge");
+      const simStatusMessage = document.getElementById("simStatusMessage");
+
+      function checkSimBalance() {
+        const d = parseFloat(simDebitAmount.value) || 0;
+        const k = parseFloat(simCreditAmount.value) || 0;
+        const diff = Math.abs(d - k);
+        if (diff === 0 && d > 0) {
+          simBalanceBadge.textContent = "SEIMBANG (BALANCE)";
+          simBalanceBadge.className = "px-2 py-0.5 rounded text-[11px] font-bold bg-emerald-500/20 text-emerald-300";
+          simStatusMessage.textContent = `✔ Validasi VBA: Debit & Kredit seimbang (Rp ${d.toLocaleString("id-ID")}). Siap posting ke Buku Besar!`;
+          simStatusMessage.className = "text-emerald-300";
+        } else {
+          simBalanceBadge.textContent = "SELISIH (OUT OF BALANCE)";
+          simBalanceBadge.className = "px-2 py-0.5 rounded text-[11px] font-bold bg-rose-500/20 text-rose-300";
+          simStatusMessage.textContent = `⚠️ Proteksi VBA Aktif: Selisih Rp ${diff.toLocaleString("id-ID")}. Jurnal ditolak hingga Debit = Kredit.`;
+          simStatusMessage.className = "text-rose-300";
+        }
+      }
+
+      simDebitAmount.addEventListener("input", checkSimBalance);
+      simCreditAmount.addEventListener("input", checkSimBalance);
+      document.getElementById("btnTestPostJournal").addEventListener("click", () => {
+        const d = parseFloat(simDebitAmount.value) || 0;
+        const k = parseFloat(simCreditAmount.value) || 0;
+        if (d === k && d > 0) {
+          showToast("Simulasi VBA: Jurnal berhasil diposting ke Buku Besar & Neraca Saldo!");
+        } else {
+          showToast("Gagal Posting: Pastikan nominal Debit dan Kredit seimbang!");
+        }
+      });
+
+      document.getElementById("btnApplyVbaCustom").addEventListener("click", () => {
+        const newTitle = document.getElementById("inputCustomVbaTitle").value.trim();
+        const newDesc = document.getElementById("inputCustomVbaDesc").value.trim();
+        if (newTitle) document.getElementById("vbaProjectTitle").textContent = newTitle;
+        if (newDesc) document.getElementById("vbaProjectDesc").textContent = newDesc;
+        vbaModal.classList.add("hidden");
+        showToast("Judul & deskripsi proyek VBA berhasil diperbarui!");
+      });
+
+      // Copy buttons
+      document.getElementById("btnCopyPortfolioPitch").addEventListener("click", () => {
+        const summary = "Affan Hafizni Vasla, CTT (Tax Staff | Tax Compliance | Tax Reporting) — Mahasiswa S1 Akuntansi Ubhara Jaya (IPK 3.11) dengan kompetensi penyusunan & pelaporan SPT Masa PPh 21 (e-Bupot), SPT Masa PPN (e-Faktur), SPT PPh Unifikasi (BPPU), SPT Tahunan PPh Badan & Rekonsiliasi Fiskal menggunakan Coretax, serta penguasaan Microsoft Excel (Pivot Table, XLOOKUP, VLOOKUP, IF, SUMIFS, Macro VBA), Accurate Online, dan Zahir Accounting. Mini Project Pajak: https://bit.ly/4wsW79W";
+        copyTextToClipboard(summary, "Ringkasan profil CV terbaru berhasil disalin!");
+      });
+
+      document.querySelectorAll(".btn-copy-text").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const val = btn.getAttribute("data-copy");
+          copyTextToClipboard(val, `Berhasil menyalin: ${val}`);
+        });
+      });
+
+      // Recruiter Quick WhatsApp & Email
+      document.getElementById("btnSendWaRecruiter").addEventListener("click", () => {
+        const name = document.getElementById("recruiterNameInput").value.trim() || "Tim Rekrutmen / HRD";
+        const role = document.getElementById("recruiterRoleSelect").value;
+        const text = encodeURIComponent(`Halo Affan Hafizni Vasla, CTT. Saya ${name} telah meninjau portofolio web dan Mini Project Pajak Anda, serta tertarik untuk berdiskusi lebih lanjut terkait posisi ${role}.`);
+        window.open(`https://wa.me/6287781527249?text=${text}`, "_blank", "noopener,noreferrer");
+      });
+
+      document.getElementById("btnSendEmailRecruiter").addEventListener("click", () => {
+        const name = document.getElementById("recruiterNameInput").value.trim() || "Tim Rekrutmen / HRD";
+        const role = document.getElementById("recruiterRoleSelect").value;
+        const subject = encodeURIComponent(`Undangan Diskusi / Interview - ${role} - Affan Hafizni Vasla, CTT`);
+        const body = encodeURIComponent(`Halo Affan Hafizni Vasla, CTT,\n\nPerkenalkan saya ${name}. Kami telah meninjau portofolio web dan sertifikasi perpajakan/akuntansi Anda, dan ingin mengundang Anda untuk berdiskusi terkait posisi ${role}.\n\nSalam,\n${name}`);
+        window.open(`mailto:affanhafiznivasla@gmail.com?subject=${subject}&body=${body}`, "_self");
+      });
+    });
+  </script>
+</body>
+</html>
